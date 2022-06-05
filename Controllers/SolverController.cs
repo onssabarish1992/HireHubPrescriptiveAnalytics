@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRAnalyticsPrescriptiveAPI.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/[controller]")]
     public class SolverController : ControllerBase
     {
         IPrescriptiveSolver _prescriptiveSolver;
