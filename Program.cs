@@ -11,6 +11,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IPrescriptiveSolver, PrescriptiveSolver>();
+builder.Services.AddScoped<IPrescriptiveSolver, PrescriptiveSolver>();
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
+
 
 var app = builder.Build();
 
